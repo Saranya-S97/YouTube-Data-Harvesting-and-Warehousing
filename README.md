@@ -10,16 +10,15 @@ Mongodb and sql are used to store and retrieve the mass data into the database.
 *Postgresql
 *Streamlit
 
-**Libraries used:**
-*Pandas
-*Googleapiclient 
-*Psycopg2
-*pymongo
-
 **Approach:**
-1. By setting up Streamlit, it creates a simple UI where users can enter a YouTube channel ID, view the channel details, and select channels to migrate to the data warehouse 
-2. To retrieve the channel and its video data, youtube api is needed. By using the Google API client library for Python it can make requests to the API.
-3. After retrieving the data from the YouTube API, it can be stored in a MongoDB data lake by using the pymongo library to connect to mongodb. MongoDB is a great choice for a data lake because it can handle unstructured and semi-structured data easily.
-4. After collecting data for multiple channels, it can be migrated to a SQL data warehouse. In this I used the PostgreSQL database and psycopg2 library to connect.
-5. SQL queries are used to join the tables in the Postgresql data warehouse and retrieve data for specific channels based on user input.
-
+- Developed a YouTube data harvesting and warehousing project using SQL, MongoDB, and Streamlit
+- Created a user-friendly interface using Streamlit to allow users to collect and analyze data from YouTube channels
+- Implemented the use of Google API to retrieve channel information such as videocount and likecount based on user input
+- Utilized MongoDB and SQL to store and retrieve large amounts of data in the database
+- Used Python, Mongodb, Postgresql, and Streamlit as main tools for development
+- Implemented key libraries such as Pandas, Googleapiclient, Psycopg2, and pymongo
+- Set up a simple UI with Streamlit for users to input a YouTube channel ID, view channel details, and migrate selected channels to the data warehouse
+- Integrated the Google API client library for Python to make requests to the YouTube API and retrieve channel and video data
+- Stored the collected data in a MongoDB data lake using the pymongo library, as MongoDB is suitable for handling unstructured and semi-structured data
+- Migrated the collected data to a PostgreSQL data warehouse using the psycopg2 library for connection
+- Utilized SQL queries to join tables in the PostgreSQL data warehouse and retrieve data for specific channels based on user input.
